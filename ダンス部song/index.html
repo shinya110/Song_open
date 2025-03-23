@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>指定時間で動画再生</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>指定した時間に動画を再生</h1>
+    
+    <label for="timeInput">再生する時間を設定：</label>
+    <input type="time" id="timeInput">
+    <button id="setTimeBtn">時間をセット</button>
+
+    <p id="status">時間を設定してください。</p>
+
+    <div class="video-container">
+        <video id="videoPlayer" width="640" height="360" controls>
+            <source src="ScreenRecording_03-21-2025 13-55-57_1.mp4" type="video/mp4">
+            お使いのブラウザは動画をサポートしていません。
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
