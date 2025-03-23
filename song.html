@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音楽プレイヤー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="playlist">
+            <h2>曲リスト</h2>
+            <ul id="song-list">
+                <li data-src="song1.mp3" draggable="true">Song 1</li>
+                <li data-src="song2.mp3" draggable="true">Song 2</li>
+                <li data-src="song3.mp3" draggable="true">Song 3</li>
+                <li data-src="song4.mp3" draggable="true">Song 4</li>
+            </ul>
+        </div>
+
+        <div class="drop-area" id="drop-area">
+            <h2>再生リスト</h2>
+            <ul id="queue-list"></ul>
+            <button id="clear-queue">再生リストをクリア</button>
+        </div>
+
+        <div class="controls">
+            <button id="play-pause">再生 / 停止</button>
+            <button id="prev">前の曲</button>
+            <button id="next">次の曲</button>
+        </div>
+
+        <audio id="audio-player" controls></audio>
+        <audio src="./songlist/7rings-1.40.mp3" controls></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
